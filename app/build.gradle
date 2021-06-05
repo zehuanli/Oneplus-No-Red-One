@@ -1,15 +1,17 @@
 apply plugin: 'com.android.application'
 
+def getVersionCode = { -> return 1 }
+
 android {
 
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.upbad.apps.opgo"
         //noinspection ExpiredTargetSdkVersion
-        minSdkVersion 30
+        minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode getVersionCode()
+        versionName "1." + getVersionCode()
     }
 
     buildTypes {
