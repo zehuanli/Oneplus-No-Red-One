@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.upbad.apps.opgo"
+        //noinspection ExpiredTargetSdkVersion
+        minSdkVersion 30
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+//    compileOnly files('libs/XposedBridgeApi-82.jar')
+    compileOnly 'de.robv.android.xposed:api:82'
+}
+
