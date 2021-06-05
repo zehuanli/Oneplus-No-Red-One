@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OPGO</string>
+    <string name="app_desc">一加加油</string>
+
+    <string-array name="scope">
+        <item>com.android.systemui</item>
+    </string-array>
+</resources>
