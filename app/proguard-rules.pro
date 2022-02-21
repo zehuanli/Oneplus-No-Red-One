@@ -19,3 +19,5 @@
 -keep class com.upbad.apps.opgo.* { *; }
 -dontwarn okio.**
 -dontwarn org.bouncycastle.**
+-dontobfuscate
+-dontshrink

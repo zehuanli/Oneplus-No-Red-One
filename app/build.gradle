@@ -9,6 +9,7 @@ android {
         applicationId "com.upbad.apps.opgo"
         //noinspection ExpiredTargetSdkVersion
         minSdkVersion 21
+        //noinspection OldTargetApi
         targetSdkVersion 30
         versionCode getVersionCode()
         versionName "1." + getVersionCode()
@@ -25,7 +26,5 @@ android {
 }
 
 dependencies {
-//    compileOnly files('libs/XposedBridgeApi-82.jar')
     compileOnly 'de.robv.android.xposed:api:82'
 }
-
