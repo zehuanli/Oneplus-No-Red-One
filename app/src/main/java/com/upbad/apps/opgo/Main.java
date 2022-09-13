@@ -1,5 +1,7 @@
 package com.upbad.apps.opgo;
 
+import android.os.Build;
+
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 import com.upbad.apps.opgo.plugin.ClockStyle;
@@ -12,15 +14,13 @@ import static de.robv.android.xposed.XposedBridge.log;
 public class Main implements IXposedHookLoadPackage {
 
     private static final IPlugin[] plugins = {
-            new ClockStyle(),
-            new ClockStyleOp12()
+            android.os.Build.VERSION.SDK_INT <= Build.VERSION_CODES.R ? new ClockStyle() : new ClockStyleOp12()
     };
 
     @Override
     public void handleLoadPackage(final LoadPackageParam lpparam) {
         if (!lpparam.packageName.equals(HookParams.SYSTEMUI_PACKAGE_NAME)) {
             return;
-
         }
         loadPlugins(lpparam, lpparam.classLoader);
     }
