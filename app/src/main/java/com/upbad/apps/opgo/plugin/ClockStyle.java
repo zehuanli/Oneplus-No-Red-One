@@ -11,7 +11,7 @@ import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
-import static com.upbad.apps.opgo.util.ReflectionUtil.log;
+import static com.upbad.apps.opgo.util.LogUtil.log;
 
 public class ClockStyle implements IPlugin {
     @Override

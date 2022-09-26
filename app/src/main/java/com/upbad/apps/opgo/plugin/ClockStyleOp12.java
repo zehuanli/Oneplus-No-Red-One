@@ -1,6 +1,6 @@
 package com.upbad.apps.opgo.plugin;
 
-import static com.upbad.apps.opgo.util.ReflectionUtil.log;
+import static com.upbad.apps.opgo.util.LogUtil.log;
 
 import android.content.Context;
 import android.text.SpannableString;
