@@ -1,4 +1,4 @@
-package com.upbad.apps.opgo.plugin;
+package com.upbad.apps.opgo.plugin.systemui;
 
 import static com.upbad.apps.opgo.util.LogUtil.log;
 
@@ -8,6 +8,8 @@ import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.upbad.apps.opgo.plugin.IPlugin;
 
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedHelpers;

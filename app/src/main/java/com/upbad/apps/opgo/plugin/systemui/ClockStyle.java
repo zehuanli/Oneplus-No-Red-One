@@ -1,9 +1,11 @@
-package com.upbad.apps.opgo.plugin;
+package com.upbad.apps.opgo.plugin.systemui;
 
 import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.widget.TextView;
+
+import com.upbad.apps.opgo.plugin.IPlugin;
 
 import java.util.Calendar;
 

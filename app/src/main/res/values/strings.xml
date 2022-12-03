@@ -3,6 +3,7 @@
     <string name="app_desc">Prevent OOS from rendering red "1" digits on the clocks</string>
 
     <string-array name="scope">
+        <item>com.oplus.uiengine</item>
         <item>com.android.systemui</item>
     </string-array>
 </resources>

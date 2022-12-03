@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
 
-def getVersionCode = { -> return 2 }
-
 android {
 
     compileSdkVersion 31
@@ -11,8 +9,8 @@ android {
         minSdkVersion 21
         //noinspection OldTargetApi
         targetSdkVersion 31
-        versionCode getVersionCode()
-        versionName "2." + getVersionCode()
+        versionCode 3
+        versionName "3.0"
     }
 
     buildTypes {
