@@ -1,3 +1,5 @@
+*This module is archived as I'm no longer using OOS, after encountering a severe bug that forced me to factory reset.*
+
 # Description
 基于Xposed，去除一加系统锁屏和AOD时钟红色字体样式的模块。
 
