@@ -12,7 +12,7 @@ public class UIEngineClockStyleOp13 implements IPlugin {
 
     @Override
     public void hook(XC_LoadPackage.LoadPackageParam lpparam, ClassLoader classLoader) {
-        log("UIEngine hook() started");
+        log("OOS 13 UIEngine hook() started");
 
         // AOD digital clock (seems not effective; OOS is likely to adapt the OpKeyguardOplusTextView in SystemUI)
 //        XposedHelpers.findAndHookMethod("com.oplus.egview.widget.OpKeyguardOplusTextView", classLoader, "getTextWithOplusColor", java.lang.CharSequence.class, new XC_MethodHook() {
@@ -32,6 +32,6 @@ public class UIEngineClockStyleOp13 implements IPlugin {
             }
         });
 
-        log("UIEngine hook() ended");
+        log("OOS 13 UIEngine hook() ended");
     }
 }

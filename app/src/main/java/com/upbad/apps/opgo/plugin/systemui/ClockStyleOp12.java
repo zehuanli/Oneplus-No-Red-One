@@ -20,7 +20,7 @@ public class ClockStyleOp12 implements IPlugin {
     @Override
     public void hook(XC_LoadPackage.LoadPackageParam lpparam, ClassLoader classLoader) {
         try {
-            log("ClockStyle OOS12 hook() started");
+            log("OOS 12 SystemUI hook() started");
             // on OnePlus OxygenOS 12, the logic changed
             // notification clock
             Class<?> kClockExt = classLoader.loadClass("com.oplusos.systemui.ext.ClockExt");
@@ -117,6 +117,7 @@ public class ClockStyleOp12 implements IPlugin {
             XposedHelpers.findAndHookMethod("com.oplusos.systemui.keyguard.clock.RedHorizontalDualClockView$updateResidentTime$1$1"
                     , classLoader, "run", updateTimeHook);
             // end of OnePlus OxygenOS 12
+            log("OOS 12 SystemUI hook() ended");
         } catch (ClassNotFoundException e) {
             log("ClockStyleOp12 hook error: " + e.getMessage());
         }

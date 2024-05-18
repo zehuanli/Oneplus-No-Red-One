@@ -15,10 +15,10 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 import static com.upbad.apps.opgo.util.LogUtil.log;
 
-public class ClockStyle implements IPlugin {
+public class ClockStyleOp11 implements IPlugin {
     @Override
     public void hook(final XC_LoadPackage.LoadPackageParam lpparam, final ClassLoader classLoader) {
-        log("ClockStyle hook() started");
+        log("OOS 11 SystemUI hook() started");
         // For AOD, clock digital 2
         // Do the same things as the original method, except changing the color of the hour digits
         // A better way might be just changing the field `mSpecialColor` to a normal (white) color, but I didn't find a proper color to borrow in this class
@@ -79,6 +79,6 @@ public class ClockStyle implements IPlugin {
                 }
             }
         });
-        log("ClockStyle hook() finished");
+        log("OOS 11 SystemUI hook() ended");
     }
 }

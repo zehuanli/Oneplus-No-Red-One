@@ -15,7 +15,7 @@ public class ClockStyleOp13 implements IPlugin {
 
     @Override
     public void hook(XC_LoadPackage.LoadPackageParam lpparam, ClassLoader classLoader) {
-        log("SystemUI hook() started");
+        log("OOS 13 SystemUI hook() started");
 
         // Status bar clock
         XposedHelpers.findAndHookMethod("com.oplusos.systemui.ext.BaseClockExt", classLoader, "setTextWithRedOneStyleInternal", android.widget.TextView.class, java.lang.CharSequence.class, new XC_MethodHook() {
@@ -37,6 +37,6 @@ public class ClockStyleOp13 implements IPlugin {
             }
         });
 
-        log("SystemUI hook() ended");
+        log("OOS 13 SystemUI hook() ended");
     }
 }
