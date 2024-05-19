@@ -1,8 +1,6 @@
 package com.upbad.apps.opgo.plugin.systemui;
 
-import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
-import android.widget.TextView;
 
 import com.upbad.apps.opgo.plugin.IPlugin;
 
@@ -23,7 +21,7 @@ public class ClockStyleOp14 implements IPlugin {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) {
                 XposedHelpers.callMethod(param.args[0], "setText", param.args[1]);
-                param.setResult(true);
+                param.setResult(XposedHelpers.getBooleanField(param.thisObject, "mIsDateTimePanel"));
             }
         });
 

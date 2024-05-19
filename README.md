@@ -1,5 +1,5 @@
 <s>This module is archived as I'm no longer using OOS, after encountering a severe bug that forced me to factory reset.</s>
-Well I had to switch back to OOS 14 for a while before a custom ROM is available. 
+Well I had to switch back to OOS 14 for a while before a custom ROM is available.
 
 # Description
 基于Xposed，去除一加系统锁屏，AOD和状态栏时钟红色字体样式的模块。
